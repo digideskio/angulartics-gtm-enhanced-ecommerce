@@ -1,0 +1,37 @@
+{
+  "name": "angulartics-gtm-enhanced-ecommerce",
+  "version": "0.0.1",
+  "description": "Google Analytics Enhanced Ecommerce implementation using Google Tag Manager and angularitics module",
+  "keywords": [
+    "google",
+    "tag manager",
+    "plugin",
+    "angular",
+    "angulartics",
+    "enhanced ecommerce"
+  ],
+  "contributors": [
+    "Agustin Haller <agustinhaller@gmail.con>"
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "build": "mkdir -p dist && uglifyjs lib/angulartics-google-tag-manager-enhanced-ecommerce.js --compress --source-map dist/angulartics-google-tag-manager-enhanced-ecommerce.min.js.map --source-map-root .. --source-map-url ../dist/angulartics-google-tag-manager-enhanced-ecommerce.min.js.map -o dist/angulartics-google-tag-manager-enhanced-ecommerce.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ionicthemes/angulartics-gtm-enhanced-ecommerce.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ionicthemes/angulartics-gtm-enhanced-ecommerce/issues"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/ionicthemes/angulartics-gtm-enhanced-ecommerce",
+  "peerDependencies": {
+    "angulartics": "^1.0.0"
+  },
+  "devDependencies": {
+    "uglify-js": "^2.5.0"
+  }
+}
