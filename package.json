@@ -1,6 +1,6 @@
 {
   "name": "angulartics-gtm-enhanced-ecommerce",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Google Analytics Enhanced Ecommerce implementation using Google Tag Manager and angularitics module",
   "keywords": [
     "google",
@@ -17,7 +17,7 @@
   "scripts": {
     "clean": "rm -rf dist",
     "prebuild": "npm run clean",
-    "build": "mkdir -p dist && uglifyjs lib/angulartics-google-tag-manager-enhanced-ecommerce.js --compress --source-map dist/angulartics-google-tag-manager-enhanced-ecommerce.min.js.map --source-map-root .. --source-map-url ../dist/angulartics-google-tag-manager-enhanced-ecommerce.min.js.map -o dist/angulartics-google-tag-manager-enhanced-ecommerce.min.js"
+    "build": "mkdir -p dist && uglifyjs lib/angulartics-google-tag-manager-enhanced-ecommerce.js --compress --source-map dist/angulartics-google-tag-manager-enhanced-ecommerce.min.js.map --source-map-root . --source-map-url ../dist/angulartics-google-tag-manager-enhanced-ecommerce.min.js.map -o dist/angulartics-google-tag-manager-enhanced-ecommerce.min.js"
   },
   "repository": {
     "type": "git",
